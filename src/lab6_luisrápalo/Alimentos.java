@@ -1,14 +1,14 @@
 package lab6_luisrápalo;
 public class Alimentos {
-    private String nombre, categoria;
+    private String nombre;
     private int costo, calorias;
+    private Categoria c = new Categoria();
 
     public Alimentos() {
     }
 
-    public Alimentos(String nombre, String categoria, int costo, int calorias) {
+    public Alimentos(String nombre, int costo, int calorias) {
         this.nombre = nombre;
-        this.categoria = categoria;
         this.costo = costo;
         this.calorias = calorias;
     }
@@ -21,12 +21,12 @@ public class Alimentos {
         this.nombre = nombre;
     }
 
-    public String getCategoria() {
-        return categoria;
+    public Categoria getc() {
+        return c;
     }
 
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
+    public void setc(Categoria c) {
+        this.c = c;
     }
 
     public int getCosto() {
@@ -47,7 +47,7 @@ public class Alimentos {
 
     @Override
     public String toString() {
-        return "Alimentos{" + "nombre=" + nombre + ", categoria=" + categoria + ", costo=" + costo + ", calorias=" + calorias + '}';
+        return "Alimentos{" + "nombre=" + nombre + ", categoria=" + c + ", costo=" + costo + ", calorias=" + calorias + '}';
     }
     
 }
