@@ -18,6 +18,8 @@ public class Principal extends javax.swing.JFrame {
      */
     public Principal() {
         initComponents();
+        
+        Categorias.add(new Categoria("Panaderia"));
         Alimentos.add(new Alimentos("Pan", 30, 300));
         Jugadores.add(new Jugadores("Andrés", 0, 1000));
         Jugadores.add(new Jugadores("James", 0, 1000));
@@ -265,6 +267,6 @@ public class Principal extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
     ArrayList<Jugadores> Jugadores = new ArrayList();
     ArrayList<Alimentos> Alimentos = new ArrayList();
-    ArrayList<Billetera> Billetera = new ArrayList();
-    ArrayList<Categoria> Categoria = new ArrayList();
+    ArrayList<Billetera> Billeteras = new ArrayList();
+    ArrayList<Categoria> Categorias = new ArrayList();
 }
