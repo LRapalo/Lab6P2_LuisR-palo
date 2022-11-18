@@ -5,6 +5,8 @@
  */
 package lab6_luisrápalo;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author luisr
@@ -16,7 +18,16 @@ public class Principal extends javax.swing.JFrame {
      */
     public Principal() {
         initComponents();
-        
+        Jugadores.add(new Jugadores("Andrés", "Pan", 0, 1000));
+        Jugadores.add(new Jugadores("James", "Pan", 0, 1000));
+        Jugadores.add(new Jugadores("Carlos", "Pan", 0, 1000));
+        Jugadores.add(new Jugadores("Juan", "Pan", 0, 1000));
+        Jugadores.add(new Jugadores("Alberto", "Pan", 0, 1000));
+        Jugadores.add(new Jugadores("Esther", "Pan", 0, 1000));
+        Jugadores.add(new Jugadores("Monica", "Pan", 0, 1000));
+        Jugadores.add(new Jugadores("Jimena", "Pan", 0, 1000));
+        Jugadores.add(new Jugadores("Allan", "Pan", 0, 1000));
+        Jugadores.add(new Jugadores("Stephan", "Pan", 0, 1000));
     }
 
     /**
@@ -251,5 +262,5 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JTree jTree1;
     // End of variables declaration//GEN-END:variables
-    ArrayList<> Jugadores = new ArrayList();
+    ArrayList<Jugadores> Jugadores = new ArrayList();
 }
