@@ -3,7 +3,8 @@ package lab6_luisrápalo;
 import java.util.ArrayList;
 
 public class Jugadores {
-    private String nombre, alimento;
+    private String nombre;
+    private Alimentos a = new Alimentos();
     private int nivel, puntos;
     private ArrayList amigosgordos = new ArrayList ();
     private ArrayList solicitudes = new ArrayList ();
@@ -12,9 +13,8 @@ public class Jugadores {
     public Jugadores() {
     }
 
-    public Jugadores(String nombre, String alimento, int nivel, int puntos) {
+    public Jugadores(String nombre, int nivel, int puntos) {
         this.nombre = nombre;
-        this.alimento = alimento;
         this.nivel = nivel;
         this.puntos = puntos;
     }
@@ -27,12 +27,12 @@ public class Jugadores {
         this.nombre = nombre;
     }
 
-    public String getAlimento() {
-        return alimento;
+    public Alimentos geta() {
+        return a;
     }
 
-    public void setAlimento(String alimento) {
-        this.alimento = alimento;
+    public void seta(Alimentos a) {
+        this.a = a;
     }
 
     public int getNivel() {
@@ -77,7 +77,7 @@ public class Jugadores {
 
     @Override
     public String toString() {
-        return "Jugadores{" + "nombre=" + nombre + ", alimento=" + alimento + ", nivel=" + nivel + ", puntos=" + puntos + ", amigosgordos=" + amigosgordos + ", solicitudes=" + solicitudes + ", b=" + b + '}';
+        return "Jugadores{" + "nombre=" + nombre + ", alimento=" + a + ", nivel=" + nivel + ", puntos=" + puntos + ", amigosgordos=" + amigosgordos + ", solicitudes=" + solicitudes + ", billetera=" + b + '}';
     }
     
 }
