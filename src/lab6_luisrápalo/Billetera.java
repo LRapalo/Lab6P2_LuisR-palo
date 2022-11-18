@@ -1,14 +1,34 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package lab6_luisrápalo;
+public class Billetera{
+    private int costo, max_puntos;
 
-/**
- *
- * @author luisr
- */
-public class Billetera {
+    public Billetera() {
+    }
+
+    public Billetera(int costo, int max_puntos) {
+        this.costo = costo;
+        this.max_puntos = max_puntos;
+    }
+
+    public int getCosto() {
+        return costo;
+    }
+
+    public void setCosto(int costo) {
+        this.costo = costo;
+    }
+
+    public int getMax_puntos() {
+        return max_puntos;
+    }
+
+    public void setMax_puntos(int max_puntos) {
+        this.max_puntos = max_puntos;
+    }
+
+    @Override
+    public String toString() {
+        return "Billetera{" + "costo=" + costo + ", max_puntos=" + max_puntos + '}';
+    }
     
 }
