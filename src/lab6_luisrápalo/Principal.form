@@ -117,7 +117,7 @@
                                       <Component id="jLabel3" alignment="0" max="32767" attributes="0"/>
                                       <Component id="jLabel5" max="32767" attributes="0"/>
                                   </Group>
-                                  <EmptySpace pref="15" max="32767" attributes="0"/>
+                                  <EmptySpace pref="97" max="32767" attributes="0"/>
                                   <Component id="jScrollPane1" min="-2" pref="275" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -211,7 +211,29 @@
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="493" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="575" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jP_amigos">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="Amigos">
+                    <Property name="tabTitle" type="java.lang.String" value="Amigos"/>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="923" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="575" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
               </Layout>
@@ -231,24 +253,36 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="costo_Billletera" max="32767" attributes="0"/>
+                              <Component id="jLabel15" max="32767" attributes="0"/>
+                              <Component id="max_puntos" max="32767" attributes="0"/>
+                              <Component id="jLabel14" max="32767" attributes="0"/>
+                              <Component id="jLabel13" max="32767" attributes="0"/>
+                              <Component id="nombre_Categoria" max="32767" attributes="0"/>
                               <Component id="jLabel12" pref="198" max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jLabel11" pref="198" max="32767" attributes="0"/>
-                                  <Component id="categoria_Alimento" max="32767" attributes="0"/>
-                                  <Component id="jLabel9" max="32767" attributes="0"/>
-                                  <Component id="nombre_Alimento" max="32767" attributes="0"/>
-                                  <Component id="jLabel7" max="32767" attributes="0"/>
-                                  <Component id="jLabel6" max="32767" attributes="0"/>
-                              </Group>
+                              <Component id="jLabel11" max="32767" attributes="0"/>
+                              <Component id="categoria_Alimento" max="32767" attributes="0"/>
+                              <Component id="jLabel9" max="32767" attributes="0"/>
+                              <Component id="jLabel7" max="32767" attributes="0"/>
+                              <Component id="jLabel6" max="32767" attributes="0"/>
+                              <Component id="nombre_Alimento" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jLabel8" max="32767" attributes="0"/>
-                              <Component id="costo_Alimento" max="32767" attributes="0"/>
-                              <Component id="jLabel10" pref="198" max="32767" attributes="0"/>
-                              <Component id="calorias_Alimento" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="jLabel8" max="32767" attributes="0"/>
+                                      <Component id="costo_Alimento" max="32767" attributes="0"/>
+                                      <Component id="jLabel10" max="32767" attributes="0"/>
+                                      <Component id="calorias_Alimento" max="32767" attributes="0"/>
+                                      <Component id="crear_Categoria" pref="198" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                                  <Component id="crear_Alimento" min="-2" pref="247" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="crear_Billletera" min="-2" pref="198" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="486" max="32767" attributes="0"/>
+                          <EmptySpace pref="195" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -263,25 +297,48 @@
                               <Component id="jLabel8" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="nombre_Alimento" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="costo_Alimento" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="crear_Alimento" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="nombre_Alimento" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                                      <Component id="costo_Alimento" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jLabel9" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="jLabel10" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="calorias_Alimento" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="categoria_Alimento" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel9" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                              <Component id="jLabel10" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="categoria_Alimento" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="calorias_Alimento" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                           <Component id="jLabel11" min="-2" pref="22" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jLabel12" min="-2" pref="24" max="-2" attributes="0"/>
-                          <EmptySpace pref="224" max="32767" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="nombre_Categoria" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="crear_Categoria" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jLabel13" min="-2" pref="22" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jLabel14" min="-2" pref="22" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="max_puntos" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jLabel15" min="-2" pref="22" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="crear_Billletera" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="costo_Billletera" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="53" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -338,29 +395,43 @@
                     <Property name="text" type="java.lang.String" value="Nombre de Categoria"/>
                   </Properties>
                 </Component>
+                <Component class="javax.swing.JTextField" name="nombre_Categoria">
+                </Component>
+                <Component class="javax.swing.JButton" name="crear_Categoria">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Crear"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel13">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Crear Billetera"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel14">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Consumo Maximo"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="max_puntos">
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel15">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Costo"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="costo_Billletera">
+                </Component>
+                <Component class="javax.swing.JButton" name="crear_Billletera">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Crear"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="crear_Alimento">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Crear"/>
+                  </Properties>
+                </Component>
               </SubComponents>
-            </Container>
-            <Container class="javax.swing.JPanel" name="jP_amigos">
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                  <JTabbedPaneConstraints tabName="Amigos">
-                    <Property name="tabTitle" type="java.lang.String" value="Amigos"/>
-                  </JTabbedPaneConstraints>
-                </Constraint>
-              </Constraints>
-
-              <Layout>
-                <DimensionLayout dim="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="923" max="32767" attributes="0"/>
-                  </Group>
-                </DimensionLayout>
-                <DimensionLayout dim="1">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="493" max="32767" attributes="0"/>
-                  </Group>
-                </DimensionLayout>
-              </Layout>
             </Container>
           </SubComponents>
         </Container>

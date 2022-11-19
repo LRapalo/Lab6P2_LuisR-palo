@@ -56,6 +56,7 @@ public class Principal extends javax.swing.JFrame {
         jScrollPane5 = new javax.swing.JScrollPane();
         jTree1 = new javax.swing.JTree();
         jP_tienda = new javax.swing.JPanel();
+        jP_amigos = new javax.swing.JPanel();
         jP_Crafteo = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -68,7 +69,15 @@ public class Principal extends javax.swing.JFrame {
         calorias_Alimento = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jP_amigos = new javax.swing.JPanel();
+        nombre_Categoria = new javax.swing.JTextField();
+        crear_Categoria = new javax.swing.JButton();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        max_puntos = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
+        costo_Billletera = new javax.swing.JTextField();
+        crear_Billletera = new javax.swing.JButton();
+        crear_Alimento = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -132,7 +141,7 @@ public class Principal extends javax.swing.JFrame {
                             .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
@@ -147,10 +156,23 @@ public class Principal extends javax.swing.JFrame {
         );
         jP_tiendaLayout.setVerticalGroup(
             jP_tiendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 493, Short.MAX_VALUE)
+            .addGap(0, 575, Short.MAX_VALUE)
         );
 
         TP_Main.addTab("Tienda", jP_tienda);
+
+        javax.swing.GroupLayout jP_amigosLayout = new javax.swing.GroupLayout(jP_amigos);
+        jP_amigos.setLayout(jP_amigosLayout);
+        jP_amigosLayout.setHorizontalGroup(
+            jP_amigosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 923, Short.MAX_VALUE)
+        );
+        jP_amigosLayout.setVerticalGroup(
+            jP_amigosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 575, Short.MAX_VALUE)
+        );
+
+        TP_Main.addTab("Amigos", jP_amigos);
 
         jLabel6.setText("Crear Alimento");
 
@@ -166,6 +188,18 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel12.setText("Nombre de Categoria");
 
+        crear_Categoria.setText("Crear");
+
+        jLabel13.setText("Crear Billetera");
+
+        jLabel14.setText("Consumo Maximo");
+
+        jLabel15.setText("Costo");
+
+        crear_Billletera.setText("Crear");
+
+        crear_Alimento.setText("Crear");
+
         javax.swing.GroupLayout jP_CrafteoLayout = new javax.swing.GroupLayout(jP_Crafteo);
         jP_Crafteo.setLayout(jP_CrafteoLayout);
         jP_CrafteoLayout.setHorizontalGroup(
@@ -173,21 +207,32 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(jP_CrafteoLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addGroup(jP_CrafteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(costo_Billletera)
+                    .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(max_puntos)
+                    .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(nombre_Categoria)
                     .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, 198, Short.MAX_VALUE)
-                    .addGroup(jP_CrafteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, 198, Short.MAX_VALUE)
-                        .addComponent(categoria_Alimento, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(nombre_Alimento)
-                        .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(categoria_Alimento, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(nombre_Alimento))
                 .addGap(18, 18, 18)
-                .addGroup(jP_CrafteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(costo_Alimento)
-                    .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, 198, Short.MAX_VALUE)
-                    .addComponent(calorias_Alimento))
-                .addContainerGap(486, Short.MAX_VALUE))
+                .addGroup(jP_CrafteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jP_CrafteoLayout.createSequentialGroup()
+                        .addGroup(jP_CrafteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(costo_Alimento)
+                            .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(calorias_Alimento)
+                            .addComponent(crear_Categoria, javax.swing.GroupLayout.DEFAULT_SIZE, 198, Short.MAX_VALUE))
+                        .addGap(44, 44, 44)
+                        .addComponent(crear_Alimento, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(crear_Billletera, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(195, Short.MAX_VALUE))
         );
         jP_CrafteoLayout.setVerticalGroup(
             jP_CrafteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -199,38 +244,44 @@ public class Principal extends javax.swing.JFrame {
                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jP_CrafteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(nombre_Alimento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(costo_Alimento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jP_CrafteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jP_CrafteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(categoria_Alimento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(calorias_Alimento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGroup(jP_CrafteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(crear_Alimento, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jP_CrafteoLayout.createSequentialGroup()
+                        .addGroup(jP_CrafteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(nombre_Alimento, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(costo_Alimento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jP_CrafteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jP_CrafteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(calorias_Alimento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(categoria_Alimento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(19, 19, 19)
                 .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(224, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(jP_CrafteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(nombre_Categoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(crear_Categoria))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(max_puntos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jP_CrafteoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(crear_Billletera)
+                    .addComponent(costo_Billletera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(53, Short.MAX_VALUE))
         );
 
         TP_Main.addTab("Crafteo", jP_Crafteo);
-
-        javax.swing.GroupLayout jP_amigosLayout = new javax.swing.GroupLayout(jP_amigos);
-        jP_amigos.setLayout(jP_amigosLayout);
-        jP_amigosLayout.setHorizontalGroup(
-            jP_amigosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 923, Short.MAX_VALUE)
-        );
-        jP_amigosLayout.setVerticalGroup(
-            jP_amigosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 493, Short.MAX_VALUE)
-        );
-
-        TP_Main.addTab("Amigos", jP_amigos);
 
         jLabel1.setText("Simulador de Engordar");
         jLabel1.setMaximumSize(new java.awt.Dimension(180, 180));
@@ -316,11 +367,18 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTextField calorias_Alimento;
     private javax.swing.JComboBox<String> categoria_Alimento;
     private javax.swing.JTextField costo_Alimento;
+    private javax.swing.JTextField costo_Billletera;
+    private javax.swing.JButton crear_Alimento;
+    private javax.swing.JButton crear_Billletera;
+    private javax.swing.JButton crear_Categoria;
     private javax.swing.JButton jB_alimentar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -339,7 +397,9 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JTree jTree1;
+    private javax.swing.JTextField max_puntos;
     private javax.swing.JTextField nombre_Alimento;
+    private javax.swing.JTextField nombre_Categoria;
     // End of variables declaration//GEN-END:variables
     ArrayList<Jugadores> Jugadores = new ArrayList();
     ArrayList<Alimentos> Alimentos = new ArrayList();
