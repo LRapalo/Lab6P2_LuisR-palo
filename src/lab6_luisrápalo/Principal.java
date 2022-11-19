@@ -7,6 +7,7 @@ package lab6_luisrápalo;
 
 import java.util.ArrayList;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.JComboBox;
 
 /**
  *
@@ -358,14 +359,16 @@ public class Principal extends javax.swing.JFrame {
         String nombre = nombre_Alimento.getText();
         int costo = (int)costo_Alimento.getValue();
         int calorias = (int)calorias_Alimento.getValue();
-        Categorias.add()
+        
     }//GEN-LAST:event_crear_AlimentoMouseClicked
 
     private void crear_CategoriaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_crear_CategoriaMouseClicked
         // TODO add your handling code here:
         String nombre = nombre_Categoria.getText();
-        DefaultComboBoxModel combomodelo = (DefaultComboBoxModel);
-        
+        DefaultComboBoxModel combomodelo = new DefaultComboBoxModel();
+        JComboBox combo = new JComboBox (combomodelo);
+        combomodelo.addElement(nombre);
+        add(combo);
     }//GEN-LAST:event_crear_CategoriaMouseClicked
 
     /**
